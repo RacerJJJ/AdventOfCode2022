@@ -48,8 +48,6 @@ public class day1 {
                 }
             }
             System.out.println(" ");
-            System.out.println("---");
-            System.out.println(" ");
             System.out.println("1. " + richestelf + " " + highest);
             System.out.println("2. " + richestelf2 + " " + highest2);
             System.out.println("3. " + richestelf3 + " " + highest3);

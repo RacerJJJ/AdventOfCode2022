@@ -72,8 +72,9 @@ public class day2 {
                 }
             }
         } finally {
-            System.out.println(points1);
-            System.out.println(points2);
+            System.out.println(" ");
+            System.out.println("First part: " + points1);
+            System.out.println("Second part: " + points2);
         }
     }
 }
