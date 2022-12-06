@@ -8,6 +8,7 @@ import static me.racer.jjj.days.day2.day2;
 import static me.racer.jjj.days.day3.day3;
 import static me.racer.jjj.days.day4.day4;
 import static me.racer.jjj.days.day5.day5;
+import static me.racer.jjj.days.day6.day6;
 
 public class Main {
 
@@ -27,12 +28,14 @@ public class Main {
          case "3" -> day3();
          case "4" -> day4();
          case "5" -> day5();
+         case "6" -> day6();
          default -> {
          System.out.println("\033[1;31mEnter a valid Input!\u001B[0m");
          dayprompt();
          }
          }**/
 
-        day5();
+        day6();
+
     }
 }
