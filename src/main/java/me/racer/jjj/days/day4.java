@@ -9,11 +9,12 @@ import java.io.IOException;
 import static me.racer.jjj.Main.datafolder;
 
 public class day4 {
-    public static void day4()  throws IOException {
+    public static void day4(File input)  throws IOException {
         Integer counting = 0;
         Integer overlapingpairs = 0;
         Integer lines = 0;
-        try (LineIterator it = FileUtils.lineIterator(new File(datafolder, "data4.txt"), "UTF-8")) {
+        // new File(datafolder, "data4.txt")
+        try (LineIterator it = FileUtils.lineIterator(input, "UTF-8")) {
             while (it.hasNext()) {
                 lines++;
                 String line = it.nextLine();

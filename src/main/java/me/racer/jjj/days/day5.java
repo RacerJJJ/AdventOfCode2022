@@ -31,9 +31,9 @@ public class day5 {
     private static ArrayList<Character> secondarystack8 = new ArrayList<>();
     private static ArrayList<Character> secondarystack9 = new ArrayList<>();
 
-    public static void day5() throws IOException {
+    public static void day5(File input) throws IOException {
 
-        try (LineIterator it = FileUtils.lineIterator(new File(datafolder, "data5.txt"), "UTF-8")) {
+        try (LineIterator it = FileUtils.lineIterator(input, "UTF-8")) {
             while (it.hasNext()) {
                 String line = it.nextLine();
                 if (line.isEmpty() || line.charAt(1) == '1') {

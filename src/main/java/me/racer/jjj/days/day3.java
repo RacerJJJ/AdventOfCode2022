@@ -11,10 +11,10 @@ import static me.racer.jjj.Main.datafolder;
 
 public class day3 {
 
-    public static void day3() throws IOException {
+    public static void day3(File input) throws IOException {
         Integer priority = 0;
         Integer priority2 = 0;
-        try (LineIterator it = FileUtils.lineIterator(new File(datafolder, "data3.txt"), "UTF-8")) {
+        try (LineIterator it = FileUtils.lineIterator(input, "UTF-8")) {
             while (it.hasNext()) {
                 String line1 = it.nextLine();
                 String line2 = it.nextLine();

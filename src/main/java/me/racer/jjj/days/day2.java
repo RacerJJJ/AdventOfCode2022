@@ -14,8 +14,8 @@ public class day2 {
     private static Integer points2 = 0;
     private static Integer lines = 0;
 
-    public static void day2() throws IOException {
-        try (LineIterator it = FileUtils.lineIterator(new File(datafolder, "data2.txt"), "UTF-8")) {
+    public static void day2(File input) throws IOException {
+        try (LineIterator it = FileUtils.lineIterator(input, "UTF-8")) {
             while (it.hasNext()) {
                 String line = it.nextLine();
                 String[] split = line.split(" ");

@@ -11,8 +11,8 @@ import java.util.Map;
 import static me.racer.jjj.Main.datafolder;
 
 public class day1 {
-    public static void day1() throws IOException {
-        try (LineIterator it = FileUtils.lineIterator(new File(datafolder, "data.txt"), "UTF-8")) {
+    public static void day1(File input) throws IOException {
+        try (LineIterator it = FileUtils.lineIterator(input, "UTF-8")) {
             int currentone = 0;
             int currentelf = 0;
             HashMap<String, Integer> alllist = new HashMap<>();

@@ -12,10 +12,10 @@ import java.util.HashSet;
 import static me.racer.jjj.Main.datafolder;
 
 public class day6 {
-    public static void day6()  throws IOException {
+    public static void day6(File input)  throws IOException {
     Integer part1 = 0;
     Integer part2 = 0;
-    try (LineIterator it = FileUtils.lineIterator(new File(datafolder, "data6.txt"), "UTF-8")) {
+    try (LineIterator it = FileUtils.lineIterator(input, "UTF-8")) {
         while (it.hasNext()) {
             String line = it.nextLine();
             for (Integer markerlength: new int[]{4, 14}) {
